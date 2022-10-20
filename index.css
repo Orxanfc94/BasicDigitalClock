@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background: #161515;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.container{
+    border-radius: 5px;
+    width: 400px;
+    height: 125px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    animation: anim 1.3s linear infinite;
+background:linear-gradient(135deg,#1a8bd1, #bd102a)
+
+    
+}
+ul{
+ display: flex;
+gap: 35px;
+
+
+
+}
+li{
+    width:60px;
+    height: 70px;
+opacity: 0.7;
+    text-align: center;
+    padding-top: 20px;
+    list-style-type: none;
+  font-size: 30pt;
+  color: #ffffff;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  
+
+
+}
+
+@keyframes anim{
+    100%{
+      filter: hue-rotate(360deg);
+    }
+}
